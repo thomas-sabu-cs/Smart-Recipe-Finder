@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template
 import requests
 app = Flask(__name__)
-API_KEY = 'a9f7fe431e564375833a46acf1b790c4'
+API_KEY = 'a'
 
 @app.route('/')
 def home():
@@ -19,3 +19,4 @@ def search_recipes():
         return jsonify({"error": "Failed to fetch recipes"}), 500
 if __name__ == '__main__':
     app.run(debug=True)
+
